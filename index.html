@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="C:\Users\USUARIO\documents\1-PROYECTO\3ro Bti.jpeg"
+    />
+    <title>Aulas Virtuales de Informática</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        height: 100%;
+        width: 100%;
+      }
+      #container {
+        margin: 1.2%;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        min-width: 95%;
+        min-height: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        height: 100vh;
+      }
+      #title {
+        background-color: #333;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        writing-mode: horizontal-lr;
+        position: relative;
+      }
+      #clases {
+        padding: 20px;
+        border-left: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        width: 30%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+      }
+      #informacion {
+        padding: 20px;
+        border-left: 2px solid #ccc;
+        height: 85vh;
+        width: 70%;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .toggle-list {
+        display: none; /* Inicialmente oculto */
+      }
+      #content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .my-title {
+        font-size: 65px;
+      }
+      .title-informacion {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .contenido-informacion {
+        font-size: 40px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 40px;
+      }
+      .social-icons a {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        height: 20%;
+      }
+      .social-icons .facebook-icon {
+        width: 45px;
+        height: 45px;
+      }
+      .social-icons .instagram-icon {
+        width: 62px;
+        height: 62px;
+      }
+      .social-icons .whatsapp-icon {
+        width: 53px;
+        height: 53px;
+      }
+      .social {
+        font-size: 40px;
+      }
+      .bottom-clases {
+        font-size: 35px;
+      }
+      a {
+        font-size: 40px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        <div>
+          <h1 class="my-title">Pdte. Carlos Antonio López</h1>
+        </div>
+      </div>
+      <div id="content">
+        <div id="informacion">
+          <h2 class="title-informacion">Información</h2>
+          <p class="contenido-informacion">
+            - Esta página web fue desarrollada por los alumnos del 3ro Bti y
+            tiene como objetivo facilitar el estudio para los alumnos del
+            Colegio Pdte. Carlos Antonio López, de la sección Bti.
+          </p>
+          <p class="contenido-informacion">
+            - Aquí se estarán subiendo videos de las explicaciones de todas las
+            materias del 1ro Bti, 2do Bti y del 3ro Bti, también se facilitarán
+            informaciones importantes y relevantes, entre otras cosas.
+          </p>
+          <p class="contenido-informacion">
+            - Esperamos que este proyecto sea de gran ayuda para cada uno de los
+            estudiantes.
+          </p>
+        </div>
+        <div id="clases">
+          <h2 class="title-informacion">Aulas</h2>
+          <ul>
+            <li>
+              <button
+                type="button"
+                class="btn btn-dark btn-lg"
+                onclick="toggleList('3roBti')"
+              >
+                <span class="bottom-clases">3ro Bti</span>
+              </button>
+              <ul class="toggle-list" id="3roBti">
+                <li>
+                  <a href="3btilaboratorio.html">Laboratorio<br /></a>
+                </li>
+                <li><a href="3btialgoritmia.html">Algoritmia</a></li>
+                <li><a href="3btiplanoptativo.html">Plan Optativo</a></li>
+                <li><a href="3btimatematica.html">Matemática</a></li>
+                <li><a href="3btiaplicada.html">Matemática Aplicada</a></li>
+                <li>
+                  <a href="3btifinanciera.html">Administración Financiera</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="btn btn-dark btn-lg"
+                onclick="toggleList('2doBti')"
+              >
+                <span class="bottom-clases">2do Bti</span>
+              </button>
+              <ul class="toggle-list" id="2doBti">
+                <li><a href="2btialgoritmia.html">Algoritmia</a></li>
+                <li><a href="2btilaboratorio.html">Laboratorio</a></li>
+                <li><a href="2btimatematica.html">Matemática</a></li>
+                <li><a href="2btiaplicada.html">Matemática Aplicada</a></li>
+                <li><a href="2btiquimica.html">Química</a></li>
+                <li><a href="2btifisica.html">Física</a></li>
+                <li>
+                  <a href="2btifinanciera.html">Administración Financiera</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="btn btn-dark btn-lg"
+                onclick="toggleList('1roBti')"
+              >
+                <span class="bottom-clases">1ro Bti</span>
+              </button>
+              <ul class="toggle-list" id="1roBti">
+                <li><a href="1btialgoritmia.html">Algoritmia</a></li>
+                <li><a href="1btimatematica.html">Matemática</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/mathi_vazq_?igshid=MzNINGNkZWQ4Mg=="
+          target="_blank"
+        >
+          <img
+            src="logo_instagram.png"
+            alt="Instagram"
+            class="instagram-icon"
+          />
+          <span class="social">Instagram</span>
+        </a>
+        <a
+          href="https://www.facebook.com/mathias.vazquez.7509?mibextid=ZbWKwL"
+          target="_blank"
+        >
+          <img src="logo_facebook.png" alt="Facebook" class="facebook-icon" />
+          <span class="social">Facebook</span>
+        </a>
+        <a href="https://wa.me/595976517898?=hola" target="_blank">
+          <img src="logo_whatsapp.png" alt="Instagram" class="whatsapp-icon" />
+          <span class="social">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <script>
+      var currentList = null;
+
+      function toggleList(id) {
+        var list = document.getElementById(id);
+
+        if (list.style.display === "none" || list.style.display === "") {
+          // Si otra lista está abierta, ciérrala primero
+          if (currentList !== null) {
+            currentList.style.display = "none";
+          }
+
+          list.style.display = "block";
+          currentList = list;
+        } else {
+          list.style.display = "none";
+          currentList = null;
+        }
+      }
+    </script>
+  </body>
+</html>
